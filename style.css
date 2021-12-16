@@ -1,0 +1,38 @@
+:root {
+    --grid-cols: 1;
+    --grid-rows: 1;
+}
+
+#container {
+    display: grid;
+    border: 10px solid blue;
+    height: 640px;
+    width: 640px;
+    grid-template-columns: repeat(var(--grid-cols), 1fr);
+    grid-template-rows: repeat(var(--grid-rows), 1fr);
+    margin-top: 100px;;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.active {
+    background-color: black;
+    transition: all 0.5s ease;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clearBtn {
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    margin: 50px;
+}
